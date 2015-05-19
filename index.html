@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercício 5 - Lista 8 by ThaGodoy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Exercício 5 - Lista 8</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/ThaGodoy/exercicio" class="btn">View on GitHub</a>
+      <a href="https://github.com/ThaGodoy/exercicio/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ThaGodoy/exercicio/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><strong>EXERCÍCIO 5 LISTA 8</strong></p>
+
+<p><strong>Aluna: Thaís Fernanda Godoy</strong></p>
+
+<hr>
+
+<p><strong>Códigos no RStudio:</strong></p>
+
+<ul>
+<li>Mouse</li>
+</ul>
+
+<div class="highlight highlight-javascript"><pre>library(qtl)
+# <span class="pl-c1">CSV</span> format
+dat2 <span class="pl-k">&lt;-</span> read.cross(<span class="pl-s"><span class="pl-pds">"</span>csv<span class="pl-pds">"</span></span>, dir<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>E:/<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>mouse_qtl_1-2.csv<span class="pl-pds">"</span></span>)
+out.mr <span class="pl-k">&lt;-</span> scanone(dat2, method<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>mr<span class="pl-pds">"</span></span>)
+out.mr
+plot(out.mr, ylab<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>LOD score<span class="pl-pds">"</span></span>)</pre></div>
+
+<ul>
+<li>Maize</li>
+</ul>
+
+<div class="highlight highlight-javascript"><pre>library(qtl)
+# <span class="pl-c1">CSV</span> format
+dat2 <span class="pl-k">&lt;-</span> read.cross(<span class="pl-s"><span class="pl-pds">"</span>csv<span class="pl-pds">"</span></span>, dir<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>E:/ESALQ/<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>fenotipo_maize.csv<span class="pl-pds">"</span></span>)
+out.mr <span class="pl-k">&lt;-</span> scanone(dat2, method<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>mr<span class="pl-pds">"</span></span>)
+out.mr
+plot(out.mr, ylab<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>LOD score<span class="pl-pds">"</span></span>)</pre></div>
+
+<hr>
+
+<p><strong>Resultados</strong></p>
+
+<ul>
+<li>Mouse</li>
+</ul>
+
+<div class="highlight highlight-javascript"><pre>    chr  pos      lod
+<span class="pl-c1">M1</span>    <span class="pl-c1">1</span>  <span class="pl-c1">0.0</span> <span class="pl-c1">2.940297</span>
+<span class="pl-c1">M2</span>    <span class="pl-c1">1</span>  <span class="pl-c1">6.8</span> <span class="pl-c1">4.968165</span>
+<span class="pl-c1">M3</span>    <span class="pl-c1">1</span>  <span class="pl-c1">7.8</span> <span class="pl-c1">5.396070</span>
+<span class="pl-c1">M4</span>    <span class="pl-c1">1</span>  <span class="pl-c1">8.7</span> <span class="pl-c1">5.838294</span>
+<span class="pl-c1">M5</span>    <span class="pl-c1">1</span> <span class="pl-c1">11.6</span> <span class="pl-c1">5.129755</span>
+<span class="pl-c1">M6</span>    <span class="pl-c1">1</span> <span class="pl-c1">14.6</span> <span class="pl-c1">5.965546</span>
+<span class="pl-c1">M7</span>    <span class="pl-c1">1</span> <span class="pl-c1">19.4</span> <span class="pl-c1">5.155110</span>
+<span class="pl-c1">M8</span>    <span class="pl-c1">1</span> <span class="pl-c1">23.3</span> <span class="pl-c1">5.748204</span>
+<span class="pl-c1">M9</span>    <span class="pl-c1">1</span> <span class="pl-c1">24.3</span> <span class="pl-c1">5.351816</span>
+<span class="pl-c1">M10</span>   <span class="pl-c1">1</span> <span class="pl-c1">26.2</span> <span class="pl-c1">5.512674</span>
+<span class="pl-c1">M11</span>   <span class="pl-c1">1</span> <span class="pl-c1">28.2</span> <span class="pl-c1">5.405073</span>
+<span class="pl-c1">M12</span>   <span class="pl-c1">1</span> <span class="pl-c1">31.1</span> <span class="pl-c1">3.818959</span>
+<span class="pl-c1">M13</span>   <span class="pl-c1">1</span> <span class="pl-c1">37.9</span> <span class="pl-c1">3.703757</span>
+<span class="pl-c1">M14</span>   <span class="pl-c1">1</span> <span class="pl-c1">48.8</span> <span class="pl-c1">2.018550</span></pre></div>
+
+<ul>
+<li>Maize</li>
+</ul>
+
+<div class="highlight highlight-javascript"><pre>chr  pos        lod
+<span class="pl-c1">M1</span>    <span class="pl-c1">1</span>  <span class="pl-c1">0.0</span> <span class="pl-c1">7.02944073</span>
+<span class="pl-c1">M2</span>    <span class="pl-c1">1</span>  <span class="pl-c1">6.8</span> <span class="pl-c1">2.26404708</span>
+<span class="pl-c1">M3</span>    <span class="pl-c1">1</span>  <span class="pl-c1">7.8</span> <span class="pl-c1">2.93973606</span>
+<span class="pl-c1">M4</span>    <span class="pl-c1">1</span>  <span class="pl-c1">8.7</span> <span class="pl-c1">0.31347946</span>
+<span class="pl-c1">M5</span>    <span class="pl-c1">1</span> <span class="pl-c1">11.6</span> <span class="pl-c1">0.60603193</span>
+<span class="pl-c1">M6</span>    <span class="pl-c1">1</span> <span class="pl-c1">14.6</span> <span class="pl-c1">0.35364482</span>
+<span class="pl-c1">M7</span>    <span class="pl-c1">1</span> <span class="pl-c1">19.4</span> <span class="pl-c1">0.23992003</span>
+<span class="pl-c1">M8</span>    <span class="pl-c1">1</span> <span class="pl-c1">23.3</span> <span class="pl-c1">0.18821428</span>
+<span class="pl-c1">M9</span>    <span class="pl-c1">1</span> <span class="pl-c1">24.3</span> <span class="pl-c1">0.03599559</span>
+<span class="pl-c1">M10</span>   <span class="pl-c1">1</span> <span class="pl-c1">26.2</span> <span class="pl-c1">0.28328667</span>
+<span class="pl-c1">M11</span>   <span class="pl-c1">1</span> <span class="pl-c1">28.2</span> <span class="pl-c1">0.12094145</span>
+<span class="pl-c1">M12</span>   <span class="pl-c1">1</span> <span class="pl-c1">31.7</span> <span class="pl-c1">0.18437680</span></pre></div>
+
+<hr>
+
+<ul>
+<li>Gráfico mouse</li>
+</ul>
+
+<p><img src="https://cloud.githubusercontent.com/assets/12297507/7694202/59da8a90-fdb3-11e4-8a23-7a9785c44ec4.jpeg" alt="Gráfico-LODmouse"></p>
+
+<hr>
+
+<ul>
+<li>Gráfico maize</li>
+</ul>
+
+<p><img src="https://cloud.githubusercontent.com/assets/12297507/7694526/f49fdee6-fdb7-11e4-8b57-8a0f2368ac0c.jpeg" alt="Gráfico-LODMaize"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ThaGodoy/exercicio">Exercício 5 - Lista 8</a> is maintained by <a href="https://github.com/ThaGodoy">ThaGodoy</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
